@@ -1,15 +1,8 @@
+---
+layout: default
+title: About Me
+---
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <main>
-      <h2>About Me</h2>
+# About Me
 
-    </main>
-
-  </body>
-</html>
+This page will tell you a little bit more about me.
