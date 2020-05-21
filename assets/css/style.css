@@ -3,6 +3,6 @@
 
 @import "{{ site.theme }}";
 
-#skip-to-content {
+#navBar {
   float: right;
 }
