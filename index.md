@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Richard Chan \| Web Developer
 ---
 
