@@ -3,6 +3,4 @@ theme: jekyll-theme-cayman
 =======
 theme: jekyll-theme-cayman
 >>>>>>> cd3c8802c102b22722fbbc740774f6fb9e41ea73
-github:
-  repository_name: Richard Chan
-  repo_title: Richard Chan
+title: Richard Chan
