@@ -1,4 +1,6 @@
-
+---
+title: Richard Chan \| Web Developer
+---
 
 # Welcome
 
