@@ -1,5 +1,6 @@
 ---
 title: Richard Chan \| Web Developer
+description: Description here
 ---
 
 # Richard Chan
