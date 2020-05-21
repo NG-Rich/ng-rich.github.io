@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 #navBar {
   float: right;
 }
