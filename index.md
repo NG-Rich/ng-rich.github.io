@@ -1,6 +1,4 @@
-
-
-# Richard Chan
+# Welcome
 
 * [About Me](#about-me)
 * [Projects](#projects)
