@@ -1,7 +1,10 @@
----
----
+html {
+  scroll-behavior: smooth;
+}
 
-@import "{{ site.theme }}";
+.anchor {
+  padding-top: 3.5rem;
+}
 
 #navBar {
   float: right;
