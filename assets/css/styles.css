@@ -6,6 +6,7 @@ img {
   height: auto;
   width: auto;
   max-width: 100%;
+  padding: 1rem;
 }
 
 .anchor {
@@ -19,4 +20,8 @@ img {
 
 #navBar {
   float: right;
+}
+
+#projects .jumbotron {
+  padding-top: 1rem;
 }
