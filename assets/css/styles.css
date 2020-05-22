@@ -2,8 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
 .anchor {
   padding-top: 3.5rem;
+}
+
+#imgIcon {
+  height: 1.7rem;
+  width: 1.7rem;
 }
 
 #navBar {
