@@ -12,7 +12,7 @@
   </head>
   <body>
     <!--BEGIN NAVIGATION-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">Richard Chan</a>
 
@@ -22,7 +22,6 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" aria-label="Jump to about me" href="#about-me">About</a>
             <a class="nav-item nav-link" aria-label="Jump to projects" href="#projects">Projects</a>
             <a class="nav-item nav-link" aria-label="Richard's Resume" href="/assets/Resume 06-26-2020.pdf" download>Resume</a>
             <a class="nav-item nav-link" aria-label="Jump to contact me" href="#contact">Contact</a>
@@ -34,104 +33,118 @@
 
     <!--BEGIN MAIN-->
     <main class="container p-3">
-      <div class="jumbotron container">
-        <h1>Hey there!</h1>
-        <h5>I'm Richard and I'm a web developer who loves finding the solution to the "how".</h5>
-      </div>
       <!--ABOUT ME-->
-      <div class="anchor text-center" id="about-me">
-        <h2>About Me</h2>
-
-        <p class="jumbotron">
-          <img class="rounded mx-auto d-block img-fluid img-thumbnail" src="assets/images/pfp.png" alt="Headshot photo of Richard Chan">
-          I got into web development because I wanted to challenge myself and I love solving puzzles.
-          I see coding as building a solution to a puzzle, and it's the fun in figuring out how to arrive to it.
-          I grew up being immersed in how technology evolved from something like blocky cellphones to smartphones
-          or 32-bit video games to virtual reality gaming. However, instead of simply being just fascinated by it, I'm striving
-          to be apart of it.
-        </p>
+      <div class="d-flex py-5">
+        <img class="pfp align-self-start mr-3 img-thumbnail" src="assets/images/pfp.jpg" alt="Headshot photo of Richard Chan">
+        <div class="justify-content-end align-items-start">
+          <img id="hello" src="assets/images/hello.png" alt="Hello logo">
+          <p class="font-weight-light">
+            I'm Richard and I'm a web developer who loves finding the solution to the "how".
+            I dove into web development because I wanted to challenge myself and I love solving puzzles.
+            I see coding as building a solution to a puzzle, and it's the fun in figuring out how to arrive to it.
+            I grew up being immersed in how technology evolved from something like blocky cellphones to smartphones
+            or 32-bit video games to virtual reality gaming. However, instead of simply being just fascinated by it, I'm striving
+            to be apart of it.
+          </p>
+          <p class="font-weight-light">
+            I bring with me a skillset in 
+            <span class="font-weight-bolder">JavaScript, React, PostgreSQL, HTML5, and CSS3</span>
+            with a hunger to learn more. When I'm not on the grind, I love reading comics and appreciating people's artwork.
+            I also love playing games in all forms whether it be tabletop or video. View my latest projects below and more on my
+            <span>
+              <a href="https://github.com/NG-Rich">Github profile.</a>
+            </span>
+          </p>
+        </div>
       </div>
-      <!--END ABOUT ME-->
+      <!--END ABOUT-->
 
       <!--PROJECTS-->
       <div class="anchor text-center" id="projects">
-        <h2>Projects</h2>
+        <img src="assets/images/projects.png" alt="Projects logo">
+      </div>
 
-        <div class="jumbotron">
-          <h3>Invade The Rift</h3>
+      <div class="container">
+        <div class="row text-center pb-3">
+          <div class="col">
+            <img class="rounded d-none d-lg-block" src="assets/images/invade_the_rift.png" alt="Invade the Rift champ rotation page">
+            
+            <h2>Invade The Rift</h2>
+            <p class="badge badge-primary">
+              Bootstrap, Node.js, Postgres, Express
+            </p>
 
-          <img src="assets/images/invade_the_rift.png" alt="Invade the Rift champ rotation page">
-          <p>
-            Full-stack app based off the popular game, League of Legends in which
-            users can receive the latest news and game information as well as
-            share their thoughts on our forums with like-minded players!
-          </p>
-          <p>
-            Used: Bootstrap, Node.js, Postgres, Express
-          </p>
-
-          <a class="btn btn-info btn-lg" role="button" href="https://ng-rich-invadetherift.herokuapp.com/" target="_blank">
-            Live Demo
-          </a>
-          <a class="btn btn-info btn-lg" role="button" href="https://github.com/NG-Rich/invade_the_rift" target="_blank">
-            Github Repo
-          </a>
+            <p>
+              Full-stack app based off the popular game, League of Legends in which
+              users can receive the latest news and game information as well as
+              share their thoughts on our forums with like-minded players!
+            </p>
+  
+            <a class="btn btn-info btn-lg" role="button" href="https://ng-rich-invadetherift.herokuapp.com/" target="_blank">
+              Live Demo
+            </a>
+            <a class="btn btn-info btn-lg" role="button" href="https://github.com/NG-Rich/invade_the_rift" target="_blank">
+              Github Repo
+            </a>
+          </div>
         </div>
 
-        <div class="jumbotron">
-          <h3>Blocipedia</h3>
+        <div class="row text-center pb-3">
+          <div class="col">
+            <img class="rounded d-none d-lg-block" src="assets/images/blocipedia.png" alt="Blocipedia landing page">
+            
+            <img class="d-none" src="assets/images/wiki_list.png" alt="Blocipedia wikis list">
+            
+            <img class="d-none" src="assets/images/blocipedia_payments.png" alt="Blocipedia payment page">
 
-          <img src="assets/images/blocipedia.png" alt="Blocipedia landing page">
+            <h2>Blocipedia</h2>
+            <p class="badge badge-primary">
+              Bootstrap, Node.js, Postgres, Express, Stripe
+            </p>
+            <p>
+              Users can create public wikis but also allowing users to upgrade their
+              accounts incorporating Stripe. With an upgraded account, users are
+              able to create private wikis and add collaborators to their wikis.
+            </p>
+  
+            <a class="btn btn-info btn-lg" role="button" href="https://ng-rich-blocipedia.herokuapp.com/" target="_blank">
+              Live Demo
+            </a>
+            <a class="btn btn-info btn-lg" role="button" href="https://github.com/NG-Rich/blocipedia-node" target="_blank">
+              Github Repo
+            </a>
+          </div>
+
+          <div class="col">
+            <img class="rounded d-none d-lg-block" src="assets/images/bloccit.png" alt="Bloccit landing page">
           
-          <img src="assets/images/wiki_list.png" alt="Blocipedia wikis list">
-          
-          <img src="assets/images/blocipedia_payments.png" alt="Blocipedia payment page">
-          <p>
-            Users can create public wikis but also allowing users to upgrade their
-            accounts incorporating Stripe. With an upgraded account, users are
-            able to create private wikis and add collaborators to their wikis.
-          </p>
-          <p>
-            Used: Bootstrap, Node.js, Postgres, Express, Stripe
-          </p>
+            <img class="d-none" src="assets/images/topic.png" alt="A Bloccit topic on dogs">
+            
+            <img class="d-none" src="assets/images/posts.png" alt="A Bloccit posts with comments">
 
-          <a class="btn btn-info btn-lg" role="button" href="https://ng-rich-blocipedia.herokuapp.com/" target="_blank">
-            Live Demo
-          </a>
-          <a class="btn btn-info btn-lg" role="button" href="https://github.com/NG-Rich/blocipedia-node" target="_blank">
-            Github Repo
-          </a>
-        </div>
-
-        <div class="jumbotron">
-          <h3>Bloccit</h3>
-
-          <img src="assets/images/bloccit.png" alt="Bloccit landing page">
-          
-          <img src="assets/images/topic.png" alt="A Bloccit topic on dogs">
-          
-          <img src="assets/images/posts.png" alt="A Bloccit posts with comments">
-          <p>
-            Users can post comments, favorite and up/down vote posts.
-            With user profiles, they are able to view their latest posts and comments.
-          </p>
-          <p>
-            Used: Bootstrap, Node.js, Postgres, Express
-          </p>
-
-          <a class="btn btn-info btn-lg" role="button" href="https://ng-rich-bloccit.herokuapp.com/" target="_blank">
-            Live Demo
-          </a>
-          <a class="btn btn-info btn-lg" role="button" href="https://github.com/NG-Rich/Bloccit" target="_blank">
-            Github Repo
-          </a>
+            <h2>Bloccit</h2>
+            <p class="badge badge-primary">
+              Bootstrap, Node.js, Postgres, Express
+            </p>
+            <p>
+              Users can post comments, favorite and up/down vote posts.
+              With user profiles, they are able to view their latest posts and comments.
+            </p>
+  
+            <a class="btn btn-info btn-lg" role="button" href="https://ng-rich-bloccit.herokuapp.com/" target="_blank">
+              Live Demo
+            </a>
+            <a class="btn btn-info btn-lg" role="button" href="https://github.com/NG-Rich/Bloccit" target="_blank">
+              Github Repo
+            </a>
+          </div>
         </div>
       </div>
       <!--END PROJECTS-->
 
       <!--CONTACT ME-->
       <div class="anchor text-center" id="contact">
-        <h2>Contact Me</h2>
+        <img src="assets/images/contact.png" alt="Contact logo">
 
         <li class="d-flex flex-column">
           <a href="mailto:rchan415@gmail.com">

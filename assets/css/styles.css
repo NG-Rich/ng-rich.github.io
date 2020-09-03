@@ -9,6 +9,41 @@ img {
   padding: 1rem;
 }
 
+#hello {
+  padding: 0 !important;
+}
+
+nav {
+  background-color: #094067;
+}
+
+body {
+  background-color: #fffffe;
+  background-image: url("../images/background.png");
+  background-repeat: round;
+}
+
+p {
+  color: #5f6c7b;
+}
+
+h2 {
+  color: #094067;
+}
+
+h3 {
+  color: #094067;
+}
+
+.btn {
+  background-color: #3da9fc;
+}
+
+.pfp {
+  width: 250px;
+  max-width: 100%;
+}
+
 .anchor {
   padding-top: 3.5rem;
 }
@@ -23,4 +58,10 @@ img {
 
 #contact li {
   font-size: x-large;
+}
+
+@media only screen and (max-width: 425px) {
+  .pfp {
+    display: none;
+  }
 }
