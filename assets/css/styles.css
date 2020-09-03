@@ -9,10 +9,6 @@ img {
   padding: 1rem;
 }
 
-#hello {
-  padding: 0 !important;
-}
-
 nav {
   background-color: #094067;
 }
@@ -36,6 +32,7 @@ h3 {
 }
 
 .btn {
+  border-color: #3da9fc;
   background-color: #3da9fc;
 }
 
@@ -46,6 +43,14 @@ h3 {
 
 .anchor {
   padding-top: 3.5rem;
+}
+
+.col-sm {
+  background-color: whitesmoke !important;
+}
+
+#hello {
+  padding: 0 !important;
 }
 
 #navBar {
