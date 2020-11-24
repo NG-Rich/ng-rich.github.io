@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #094067;
+}
+
+bod {
+  background-color: #fffffe;
+  background-image: url("../images/background.png");
+  background-repeat: round;
+  position: relative;
+  background-position: 0%;
+}
+
+p {
+  color: #5f6c7b;
+}
+
+h2 {
+  color: #094067;
+}
+
+h3 {
+  color: #094067;
+}
+
+#aboutM {
+  background-image: url("../images/background.png");
+  background-repeat: round;
+  position: relative;
+  background-position: 0%;
+}
+
+.btn {
+  border-color: #3da9fc;
+  background-color: #3da9fc;
+}
+
+.pfp {
+  width: 250px;
+  max-width: 100%;
+}
+
+.anchor {
+  padding-top: 3.5rem;
+}
+
+.col-sm {
+  background-color: whitesmoke !important;
+}
+
+#hello {
+  padding: 0 !important;
+}
+
+#navBar {
+  float: right;
+}
+
+#projects .jumbotron {
+  padding-top: 1rem;
+}
+
+#contact li {
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 425px) {
+  .pfp {
+    display: none;
+  }
+}

@@ -1,72 +1,53 @@
 html {
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
-img {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  padding: 1rem;
+body {
+  margin: 0;
 }
 
 nav {
   background-color: #094067;
+  padding: 5px;
 }
 
-body {
-  background-color: #fffffe;
-  background-image: url("../images/background.png");
-  background-repeat: round;
+ul {
+  display: flex;
 }
 
-p {
-  color: #5f6c7b;
-}
-
-h2 {
-  color: #094067;
-}
-
-h3 {
-  color: #094067;
-}
-
-.btn {
-  border-color: #3da9fc;
-  background-color: #3da9fc;
-}
-
-.pfp {
-  width: 250px;
-  max-width: 100%;
-}
-
-.anchor {
-  padding-top: 3.5rem;
-}
-
-.col-sm {
-  background-color: whitesmoke !important;
-}
-
-#hello {
-  padding: 0 !important;
+ul a {
+  padding: 0px 5px 0px 5px;
 }
 
 #navBar {
-  float: right;
+  display: flex;
+  justify-content: space-between;
 }
 
-#projects .jumbotron {
-  padding-top: 1rem;
+#navBar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
 }
 
-#contact li {
-  font-size: x-large;
+#navBar:first-child {
+  padding: 0px 50px 0px 50px;
 }
 
-@media only screen and (max-width: 425px) {
-  .pfp {
-    display: none;
-  }
+#aboutMe {
+  display: flex;
+  padding: 50px;
+  font-weight: lighter;
+}
+
+#aboutMe div {
+  padding: 20px;
+}
+
+#pfp {
+  width: 250px;
+  max-width: 100%;
 }
