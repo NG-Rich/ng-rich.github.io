@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
@@ -18,14 +19,22 @@
       <div id="navBar">
         <a href="#">Richard Chan</a>
 
-        <div>
-          <ul>
-            <a aria-label="Jump to projects" href="#projects">Projects</a>
-            <a aria-label="Richard's resume" href="/assets/Master Resume - Web Developer" download>Resume</a>
-            <a aria-label="Richard's blog" target="_blank" href="https://medium.com/@ng_rich" rel="noreferrer">Blog</a>
-            <a aria-label="Jump to contact me" href="#contact">Contact</a>
+        
+          <ul id="topNav">
+            <li>
+              <a aria-label="Jump to projects" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a aria-label="Richard's resume" href="/assets/Master Resume - Web Developer" download>Resume</a>
+            </li>
+            <li>
+              <a aria-label="Richard's blog" target="_blank" href="https://medium.com/@ng_rich" rel="noreferrer">Blog</a>
+            </li>
+            <li>
+              <a aria-label="Jump to contact me" href="#contact">Contact</a>
+            </li>
           </ul>
-        </div>
+        
       </div>
     </nav>
     <!-- END NAVIGATION -->
@@ -35,7 +44,7 @@
 
       <div>
         <img id="hello" src="assets/images/hello.png" alt="Hello logo">
-        <p class="font-weight-light">
+        <p>
           I'm Richard and I'm a web developer who loves finding the solution to the "how".
           I dove into web development because I wanted to challenge myself and I love solving puzzles.
           I see coding as building a solution to a puzzle, and it's the fun in figuring out how to arrive to it.
@@ -43,9 +52,9 @@
           or 32-bit video games to virtual reality gaming. However, instead of simply being just fascinated by it, I'm striving
           to be apart of it.
         </p>
-        <p class="font-weight-light">
+        <p>
           I bring with me a skillset in 
-          <span class="font-weight-bolder">JavaScript, React, PostgreSQL, HTML5, and CSS3</span>
+          <span>JavaScript, React, PostgreSQL, HTML5, and CSS3</span>
           with a hunger to learn more. When I'm not on the grind, I love reading comics and appreciating people's artwork.
           I also love playing games in all forms whether it be tabletop or video. View my latest projects below and more on my
           <span>
@@ -55,6 +64,25 @@
       </div>
     </div>
     <!-- END WELCOME | ABOUT ME -->
+    <!-- PROJECTS -->
+    <div>
+      <img id="projects" class="banners" src="assets/images/projects.png" alt="Projects logo">
 
+      <ul id="projectList">
+        <article>
+          <img class="projectImg" src="assets/images/invade_the_rift.png" alt="Invade the Rift champ rotation page">
+        </article>
+        <article>
+          <img class="projectImg" src="assets/images/blocipedia.png" alt="Blocipedia landing page">
+        </article>
+        <article>
+          <img class="projectImg" src="assets/images/bloccit.png" alt="Bloccit landing page">
+        </article>
+      </ul>
+    </div>
+    <!-- END PROJECTS -->
+
+
+    <script src="index.js"></script>
   </body>
 </html>

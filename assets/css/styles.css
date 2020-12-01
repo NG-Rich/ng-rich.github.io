@@ -14,6 +14,7 @@ nav {
 
 ul {
   display: flex;
+  list-style: none;
 }
 
 ul a {
@@ -33,6 +34,10 @@ ul a {
   color: whitesmoke;
 }
 
+#navBar a.icon {
+  display: none;
+}
+
 #navBar:first-child {
   padding: 0px 50px 0px 50px;
 }
@@ -47,7 +52,64 @@ ul a {
   padding: 20px;
 }
 
+#aboutMe div p span {
+  font-weight: bolder;
+}
+
 #pfp {
   width: 250px;
   max-width: 100%;
+}
+
+.banners {
+  display: block;
+  margin: auto;
+}
+
+.projectImg {
+  width: 75%;
+}
+
+@media only screen and (max-width: 425px) {
+  #pfp {
+    display: none;
+  }
+
+  #pfp, #projects, #hello {
+    max-width: 75%;
+  }
+
+  #hello {
+    padding-left: 2.5rem;
+  }
+
+  #aboutMe {
+    padding: 0;
+  }
+
+  #navBar:first-child {
+    padding: 0px 10px 0px 10px;
+  }
+
+  #aboutMe p {
+    padding: 5px;
+  }
+
+  #projectList {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.75rem
+  }
+
+  #topNav {
+    display: block;
+    float: right;
+    width: 100%;
+  }
+
+  #topNav li {
+    display: flex;
+    justify-content: flex-end;
+  }
+
 }
