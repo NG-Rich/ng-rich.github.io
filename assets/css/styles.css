@@ -2,71 +2,336 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  padding: 1rem;
-}
-
-nav {
-  background-color: #094067;
-}
-
 body {
-  background-color: #fffffe;
-  background-image: url("../images/background.png");
-  background-repeat: round;
+  font-family: sans-serif;
+  background-position: inherit;
+  background-size: contain;
+  background-repeat: repeat;
+  overflow-x: hidden;
+  margin: 0;
 }
 
-p {
-  color: #5f6c7b;
+ul {
+  display: flex;
+  list-style: none;
 }
 
-h2 {
-  color: #094067;
+ul a {
+  padding: 0px 5px 0px 5px;
 }
 
-h3 {
-  color: #094067;
+#logo {
+  max-width: 4%;
+  height: 4%;
+  align-self: center;
+  padding: 0 0 0 3%;
 }
 
-.btn {
-  border-color: #3da9fc;
-  background-color: #3da9fc;
-}
-
-.pfp {
-  width: 250px;
-  max-width: 100%;
-}
-
-.anchor {
-  padding-top: 3.5rem;
-}
-
-.col-sm {
-  background-color: whitesmoke !important;
-}
-
-#hello {
-  padding: 0 !important;
+#logo img {
+  width: 100%;
 }
 
 #navBar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: whitesmoke;
+  padding: 5px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#navBar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Bebas neue;
+  font-weight: bold;
+  color: black;
+}
+
+#topNav {
+  display: flex;
   float: right;
+  padding: 0 3% 0 0;
 }
 
-#projects .jumbotron {
-  padding-top: 1rem;
+#hero {
+  background-image: url("../images/bgnoir.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(.15rem);
+  height: 45rem;
 }
 
-#contact li {
-  font-size: x-large;
+#welcomeContainer {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+}
+
+#welcomeContainer div:first-child h1.headers{
+  color: whitesmoke;
+  padding: 1% 0 0 0;
+  font-size: 800%;
+  margin-bottom: -5%;
+}
+
+#welcomeContainer div:first-child h3.headers {
+  color: whitesmoke;
+  font-size: 300%;
+  padding: 0;
+  font-family: im;
+}
+
+#welcomeContainer div:last-child h1 {
+  font-size: 150%;
+  padding: 0;
+  transform: translateY(650%);
+  font-family: im;
+}
+
+#welcomeContainer div:last-child h1 a i {
+  display: flex;
+  flex-direction: column-reverse;
+  transform: translateY(-220%);
+}
+
+.headers {
+  padding: 5% 0 0 0;
+  text-align: center;
+  font-family: Bebas neue;
+  font-size: 500%;
+  margin: auto;
+}
+
+#arrowAnimate {
+  animation: animate 1s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes animate {
+  from {transform: translateY(-220%);}
+  to {transform: translateY(-210%);}
+}
+
+.banners {
+  display: block;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+#projectList {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 2rem;
+  padding: 0;
+}
+
+.projectInstructions {
+  text-align: center;
+}
+
+.projectDescription h2 {
+  margin: .2rem;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-out;
+  height: 0;
+}
+
+.projectDescription.open {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: 1s ease-in;
+}
+
+.projectImg {
+  width: 80%;
+  height: 12.5rem;
+  max-height: 100%;
+}
+
+.projectImg:hover, .projectImg:active {
+  opacity: 0.5;
+}
+
+.filter-color {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+  filter: invert(0%) sepia(96%) saturate(19%) hue-rotate(227deg) brightness(30%) contrast(99%);
+}
+
+.techStack {
+  display: flex;
+}
+
+#aboutMe {
+  display: flex;
+  padding: 10%;
+  font-weight: lighter;
+}
+
+#aboutMe div {
+  padding: 20px;
+}
+
+#aboutMe div p span {
+  font-weight: bolder;
+}
+
+#pfp {
+  width: 20%;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+#aboutMe div .headers {
+  font-size: 600%;
+}
+
+#contact {
+  padding: 10% 0 5% 0;
+}
+
+#contactList a {
+  text-decoration: none;
+  color: black;
+  padding: .25rem;
+}
+
+#contactList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #navBar {
+    width: 99%;
+  }
+
+  #welcomeContainer div:last-child h1 {
+    transform: translateY(450%);
+  }
+
+  #aboutMe {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #pfp {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    max-width: 5%;
+    height: 5%;
+  }
+
+  #topNav {
+    display: flex;
+    float: right;
+  }
+
+  #welcomeContainer {
+    z-index: 0;
+  }
+
+  #projectList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  #pfp {
+    width: 40%;
+    height: 50%;
+    align-self: center;
+  }
+
+  .headers {
+    padding: 10% 0 0 0;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-  .pfp {
+  #logo {
+    margin: 0;
+    max-width: 10%;
+    height: 10%;
+  }
+
+  #navBar {
+    width: 96%;
+    padding: 0 3% 0 3%;
+  }
+
+  #topNav {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+
+  #topNav li {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .projectImg {
+    width: 75%;
+  }
+
+  #pfp {
     display: none;
+  }
+
+  #pfp {
+    max-width: 75%;
+  }
+
+  #hello {
+    padding-left: 2.5rem;
+  }
+
+  #aboutMe {
+    padding: 0;
+  }
+
+  #aboutMe p {
+    padding: 5px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .headers {
+    padding: 35% 0 0 0;
   }
 }
