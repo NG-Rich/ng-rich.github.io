@@ -1,15 +1,45 @@
 html {
   scroll-behavior: smooth;
-  font-family: sans-serif;
 }
 
 body {
+  font-family: sans-serif;
   margin: 0;
+  /*background-image: url("../images/background1.jpg");*/
+  background-position: inherit;
+  background-size: contain;
+  background-repeat: repeat;
+  overflow-x: hidden;
 }
 
-nav {
-  background-color: #094067;
-  padding: 5px;
+
+
+#hero {
+  background-image: url("../images/bgnoir.jpg");
+  height: 45rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(.15rem);
+}
+
+#arrowAnimate {
+  animation: animate 1s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes animate {
+  from {transform: translateY(-220%);}
+  to {transform: translateY(-210%);}
+}
+
+#welcomeContainer {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 ul {
@@ -21,30 +51,43 @@ ul a {
   padding: 0px 5px 0px 5px;
 }
 
+#logo {
+  max-width: 3%;
+  height: 3%;
+  align-self: center;
+}
+
+#logo img {
+  width: 100%;
+}
+
 #navBar {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  background-color: whitesmoke;
+  padding: 5px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 #navBar a {
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-family: Bebas neue;
   font-weight: bold;
-  color: whitesmoke;
-}
-
-#navBar a.icon {
-  display: none;
+  color: black;
 }
 
 #navBar:first-child {
-  padding: 0px 50px 0px 50px;
+  /*padding: 0px 50px 0px 50px;*/
 }
 
 #aboutMe {
   display: flex;
-  padding: 50px;
+  padding: 10%;
   font-weight: lighter;
 }
 
@@ -57,8 +100,21 @@ ul a {
 }
 
 #pfp {
-  width: 250px;
+  width: 20%;
   max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+.headers {
+  padding: 5% 0 0 0;
+  text-align: center;
+  font-family: Bebas neue;
+  font-size: 500%;
+  margin: auto;
+}
+
+#aboutMe div .headers {
+  font-size: 600%;
 }
 
 .banners {
@@ -67,15 +123,141 @@ ul a {
 }
 
 .projectImg {
-  width: 75%;
+  width: 80%;
+  height: 12.5rem;
+  max-height: 100%;
 }
 
-@media only screen and (max-width: 425px) {
+.projectImg:hover, .projectImg:active {
+  opacity: 0.5;
+}
+
+
+.filter-color {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+  filter: invert(0%) sepia(96%) saturate(19%) hue-rotate(227deg) brightness(30%) contrast(99%);
+}
+
+.techStack {
+  display: flex;
+}
+
+#contact {
+  padding: 10% 0 5% 0;
+}
+
+#contactList a {
+  text-decoration: none;
+  color: black;
+  padding: .25rem;
+}
+
+.projectInstructions {
+  text-align: center;
+}
+
+#contactList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-out;
+  height: 0;
+}
+
+.projectDescription.open {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: 1s ease-in;
+}
+
+#projectList {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0;
+}
+.banners {
+  padding-top: 6rem;
+}
+
+#topNav {
+  display: flex;
+  float: right;
+  padding: 0 3% 0 0;
+}
+
+#logo {
+  max-width: 4%; /*fix*/
+  height: 4%;
+  padding: 0 0 0 3%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #navBar {
+    width: 99%;
+  }
+
+  #aboutMe {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #pfp {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #projectList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #topNav {
+    display: flex;
+    float: right;
+  }
+
+  #logo {
+    max-width: 5%;
+    height: 5%;
+  }
+
+  #pfp {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 425px) {  
+  #logo {
+    margin: 0;
+    max-width: 10%;
+    height: 10%;
+  }
+
   #pfp {
     display: none;
   }
 
-  #pfp, #projects, #hello {
+  #pfp {
     max-width: 75%;
   }
 
@@ -87,24 +269,19 @@ ul a {
     padding: 0;
   }
 
+  #navBar {
+    width: 96%;
+    padding: 0 3% 0 3%;
+  }
+
   #navBar:first-child {
-    padding: 0px 10px 0px 10px;
-  }
-
-  #aboutMe p {
-    padding: 5px;
-  }
-
-  #projectList {
-    display: flex;
-    flex-direction: column;
-    padding-left: 3.75rem
+    /*padding: 0px 10px 0px 10px;*/
   }
 
   #topNav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     float: right;
-    width: 100%;
   }
 
   #topNav li {
@@ -112,4 +289,22 @@ ul a {
     justify-content: flex-end;
   }
 
+  #aboutMe p {
+    padding: 5px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .projectImg {
+    width: 75%;
+  }
+  
+  .headers {
+    padding: 25% 0 0 0;
+    font-size: 400%;
+  }
 }

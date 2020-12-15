@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://kit.fontawesome.com/0e86c4aa0c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
@@ -15,38 +18,192 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav>
-      <div id="navBar">
-        <a href="#">Richard Chan</a>
-
+    <nav id="navBar">
+      
+      <a id="logo" href="#">
+        <img src="assets/images/logo.png" alt="Richard Chan logo">
+      </a>
         
-          <ul id="topNav">
-            <li>
-              <a aria-label="Jump to projects" href="#projects">Projects</a>
-            </li>
-            <li>
-              <a aria-label="Richard's resume" href="/assets/Master Resume - Web Developer" download>Resume</a>
-            </li>
-            <li>
-              <a aria-label="Richard's blog" target="_blank" href="https://medium.com/@ng_rich" rel="noreferrer">Blog</a>
-            </li>
-            <li>
-              <a aria-label="Jump to contact me" href="#contact">Contact</a>
-            </li>
-          </ul>
-        
-      </div>
+      <ul id="topNav">
+        <li>
+          <a aria-label="Jump to about me" href="#aboutMe">About</a>
+        </li>
+        <li>
+          <a aria-label="Jump to my projects" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a aria-label="Richard's resume" href="/assets/Master Resume - Web Developer" download>Resume</a>
+        </li>
+        <li>
+          <a aria-label="Richard's blog" target="_blank" href="https://medium.com/@ng_rich" rel="noreferrer">Blog</a>
+        </li>
+        <li>
+          <a aria-label="Jump to contact me" href="#contact">Contact</a>
+        </li>
+      </ul>
+      
     </nav>
     <!-- END NAVIGATION -->
+
+    <!-- HERO -->
+    <div id="hero"></div>
+    <div id="welcomeContainer">
+      <div>
+        <h1 class="headers" style="color: whitesmoke;
+        padding: 1% 0 0 0;
+        font-size: 800%;
+        font-family: Bebas neue;
+        margin-bottom: -5%;">
+          Richard Chan
+        </h1>
+        <h3 class="headers" style="color: whitesmoke;
+        font-size: 300%;
+        padding: 0;
+        font-family: im;">
+          Web Developer
+        </h3>
+      </div>
+      <div>
+        <h1 class="headers" style="font-size: 150%;
+        padding: 0;
+        transform: translateY(650%);
+        font-family: im;">
+          <a href="#projects" style="color: whitesmoke; text-decoration: none;">
+            <i id="arrowAnimate" class="fas fa-chevron-down" style="display: flex;
+            flex-direction: column-reverse;
+            transform: translateY(-220%);"> view projects</i>
+          </a>
+        </h1>
+      </div>
+    </div>
+    <!-- END HERO -->
+
+
+    <!-- PROJECTS -->
+    <div>
+      
+      <h1 id="projects" class="headers">Projects</h1>
+      <!--<img id="projects" class="banners" src="assets/images/projects.png" alt="Projects logo">-->
+      <h3 class="projectInstructions">Click <span style="font-weight: lighter;">on a project to learn more.</span></h3>
+
+      <ul id="projectList">
+        <li class="projectID">
+          <img class="projectImg" src="assets/images/js30_challenge.png" alt="JavaScript 30 day challenge">
+
+          <div class="projectDescription">
+            <h2>JavaScript 30 Day Challenge</h2>
+            <div class="techStack">
+              <img class="filter-color" src="assets/images/html-5.svg" alt="HTML5 Icon">
+              <img class="filter-color" src="assets/images/css-3.svg" alt="CSS3 Icon">
+            </div>
+
+            <p>
+              -stack app based off the popular game, League of Legends in which
+              users can receive the latest news and game information as well as
+              share their thoughts on our forums with like-minded players!
+            </p>
+
+            <a href="https://ng-rich-invadetherift.herokuapp.com/" target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+            <a href="https://github.com/NG-Rich/invade_the_rift" target="_blank" rel="noreferrer">
+              Github Repo
+            </a>
+          </div>
+        </li>
+        <li class="projectID">
+          <img class="projectImg" src="assets/images/invade_the_rift.png" alt="Invade the Rift champ rotation page">
+          
+          <div class="projectDescription">
+            <h2>Invade The Rift</h2>
+            <div class="techStack">
+              <img class="filter-color" src="assets/images/bootstrap.svg" alt="Bootstrap Icon">
+              <img class="filter-color" src="assets/images/nodejs.svg" alt="Nodejs Icon">
+              <img class="filter-color" src="assets/images/postgres.svg" alt="Postgres Icon">
+              <img class="filter-color" src="assets/images/express.svg" alt="Express Icon">
+            </div>
+
+            <p>
+              Full-stack app based off the popular game, League of Legends in which
+              users can receive the latest news and game information as well as
+              share their thoughts on our forums with like-minded players!
+            </p>
+  
+            <a href="https://ng-rich-invadetherift.herokuapp.com/" target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+            <a href="https://github.com/NG-Rich/invade_the_rift" target="_blank" rel="noreferrer">
+              Github Repo
+            </a>
+          </div>
+        </li>
+        <li class="projectID">
+          <img class="projectImg" src="assets/images/blocipedia.png" alt="Blocipedia landing page">
+
+          <div class="projectDescription">
+            <h2>Blocipedia</h2>
+            <div class="techStack">
+              <img class="filter-color" src="assets/images/bootstrap.svg" alt="Bootstrap Icon">
+              <img class="filter-color" src="assets/images/nodejs.svg" alt="Nodejs Icon">
+              <img class="filter-color" src="assets/images/postgres.svg" alt="Postgres Icon">
+              <img class="filter-color" src="assets/images/express.svg" alt="Express Icon">
+              <img class="filter-color" src="assets/images/stripe.svg" alt="Stripe Icon">
+            </div>
+
+            <p>
+              Users can create public wikis but also allowing users to upgrade their
+              accounts incorporating Stripe. With an upgraded account, users are
+              able to create private wikis and add collaborators to their wikis.
+            </p>
+  
+            <a href="https://ng-rich-blocipedia.herokuapp.com/" target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+            <a href="https://github.com/NG-Rich/blocipedia-node" target="_blank" rel="noreferrer">
+              Github Repo
+            </a>
+          </div>
+        </li>
+        <li class="projectID">
+          <img class="projectImg" src="assets/images/bloccit.png" alt="Bloccit landing page">
+
+          <div class="projectDescription">
+            <h2>Bloccit</h2>
+            <div class="techStack">
+              <img class="filter-color" src="assets/images/bootstrap.svg" alt="Bootstrap Icon">
+              <img class="filter-color" src="assets/images/nodejs.svg" alt="Nodejs Icon">
+              <img class="filter-color" src="assets/images/postgres.svg" alt="Postgres Icon">
+              <img class="filter-color" src="assets/images/express.svg" alt="Express Icon">
+            </div>
+
+            <p>
+              Users can post on topics created by admins.
+              Users also have the ability to comment on posts as well as up/down voting comments.
+              With user profiles, they are able to view their latest posts and comments.
+            </p>
+  
+            <a href="https://ng-rich-bloccit.herokuapp.com/" target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+            <a href="https://github.com/NG-Rich/Bloccit" target="_blank" rel="noreferrer">
+              Github Repo
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- END PROJECTS -->
+
     <!-- WELCOME | ABOUT ME -->
     <div id="aboutMe">
       <img id="pfp" src="assets/images/pfp.jpg" alt="Headshot photo of Richard Chan">
 
       <div>
-        <img id="hello" src="assets/images/hello.png" alt="Hello logo">
+        <h1 class="headers">Hello!</h1>
+        <!--<img id="hello" src="assets/images/hello.png" alt="Hello logo">-->
         <p>
-          I'm Richard and I'm a web developer who loves finding the solution to the "how".
-          I dove into web development because I wanted to challenge myself and I love solving puzzles.
+          I'm Richard and I'm a full-stack developer in San Francisco who loves finding the solution to the "how".
+          I dove into software development because I wanted to challenge myself and I love solving puzzles.
           I see coding as building a solution to a puzzle, and it's the fun in figuring out how to arrive to it.
           I grew up being immersed in how technology evolved from something like blocky cellphones to smartphones
           or 32-bit video games to virtual reality gaming. However, instead of simply being just fascinated by it, I'm striving
@@ -64,24 +221,36 @@
       </div>
     </div>
     <!-- END WELCOME | ABOUT ME -->
-    <!-- PROJECTS -->
-    <div>
-      <img id="projects" class="banners" src="assets/images/projects.png" alt="Projects logo">
 
-      <ul id="projectList">
-        <article>
-          <img class="projectImg" src="assets/images/invade_the_rift.png" alt="Invade the Rift champ rotation page">
-        </article>
-        <article>
-          <img class="projectImg" src="assets/images/blocipedia.png" alt="Blocipedia landing page">
-        </article>
-        <article>
-          <img class="projectImg" src="assets/images/bloccit.png" alt="Bloccit landing page">
-        </article>
-      </ul>
+    <!--CONTACT ME-->
+    <div id="contact">
+      <h1 class="headers">Contact Me</h1>
+      <!--<img class="banners" src="assets/images/contact.png" alt="Contact logo">-->
+
+      <li id="contactList">
+        <a href="mailto:rchan415@gmail.com">
+          <i class="fa fa-envelope-square" aria-hidden="true" title="Envelope icon"></i>
+          <span class="sr-only">Envelope icon</span>
+          Email
+        </a>
+        <a target="_blank" href="https://github.com/NG-Rich" rel="noreferrer">
+          <i class="fa fa-github-square" aria-hidden="true" title="Github icon"></i>
+          <span class="sr-only">Github icon</span>
+          Github
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/rchan817/" rel="noreferrer">
+          <i class="fa fa-linkedin-square" aria-hidden="true" title="Linkedin icon"></i>
+          <span class="sr-only">Linkedin icon</span>
+          LinkedIn
+        </a>
+        <a target="_blank" href="https://twitter.com/richtheng" rel="noreferrer">
+          <i class="fa fa-twitter-square" aria-hidden="true" title="Twitter icon"></i>
+          <span class="sr-only">Twitter icon</span>
+          Twitter
+        </a>
+      </li>
     </div>
-    <!-- END PROJECTS -->
-
+    <!--END CONTACT-->
 
     <script src="index.js"></script>
   </body>
