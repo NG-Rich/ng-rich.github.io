@@ -4,42 +4,11 @@ html {
 
 body {
   font-family: sans-serif;
-  margin: 0;
-  /*background-image: url("../images/background1.jpg");*/
   background-position: inherit;
   background-size: contain;
   background-repeat: repeat;
   overflow-x: hidden;
-}
-
-
-
-#hero {
-  background-image: url("../images/bgnoir.jpg");
-  height: 45rem;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(.15rem);
-}
-
-#arrowAnimate {
-  animation: animate 1s ease-in-out 0s infinite alternate none;
-}
-
-@keyframes animate {
-  from {transform: translateY(-220%);}
-  to {transform: translateY(-210%);}
-}
-
-#welcomeContainer {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  text-align: center;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 ul {
@@ -52,9 +21,10 @@ ul a {
 }
 
 #logo {
-  max-width: 3%;
-  height: 3%;
+  max-width: 4%;
+  height: 4%;
   align-self: center;
+  padding: 0 0 0 3%;
 }
 
 #logo img {
@@ -81,28 +51,56 @@ ul a {
   color: black;
 }
 
-#navBar:first-child {
-  /*padding: 0px 50px 0px 50px;*/
-}
-
-#aboutMe {
+#topNav {
   display: flex;
-  padding: 10%;
-  font-weight: lighter;
+  float: right;
+  padding: 0 3% 0 0;
 }
 
-#aboutMe div {
-  padding: 20px;
+#hero {
+  background-image: url("../images/bgnoir.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(.15rem);
+  height: 45rem;
 }
 
-#aboutMe div p span {
-  font-weight: bolder;
+#welcomeContainer {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
 }
 
-#pfp {
-  width: 20%;
-  max-width: 100%;
-  border-radius: 0.25rem;
+#welcomeContainer div:first-child h1.headers{
+  color: whitesmoke;
+  padding: 1% 0 0 0;
+  font-size: 800%;
+  margin-bottom: -5%;
+}
+
+#welcomeContainer div:first-child h3.headers {
+  color: whitesmoke;
+  font-size: 300%;
+  padding: 0;
+  font-family: im;
+}
+
+#welcomeContainer div:last-child h1 {
+  font-size: 150%;
+  padding: 0;
+  transform: translateY(650%);
+  font-family: im;
+}
+
+#welcomeContainer div:last-child h1 a i {
+  display: flex;
+  flex-direction: column-reverse;
+  transform: translateY(-220%);
 }
 
 .headers {
@@ -113,57 +111,35 @@ ul a {
   margin: auto;
 }
 
-#aboutMe div .headers {
-  font-size: 600%;
+#arrowAnimate {
+  animation: animate 1s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes animate {
+  from {transform: translateY(-220%);}
+  to {transform: translateY(-210%);}
 }
 
 .banners {
   display: block;
   margin: auto;
+  padding-top: 6rem;
 }
 
-.projectImg {
-  width: 80%;
-  height: 12.5rem;
-  max-height: 100%;
-}
-
-.projectImg:hover, .projectImg:active {
-  opacity: 0.5;
-}
-
-
-.filter-color {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  width: 2rem;
-  filter: invert(0%) sepia(96%) saturate(19%) hue-rotate(227deg) brightness(30%) contrast(99%);
-}
-
-.techStack {
-  display: flex;
-}
-
-#contact {
-  padding: 10% 0 5% 0;
-}
-
-#contactList a {
-  text-decoration: none;
-  color: black;
-  padding: .25rem;
+#projectList {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 2rem;
+  padding: 0;
 }
 
 .projectInstructions {
   text-align: center;
 }
 
-#contactList {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
+.projectDescription h2 {
+  margin: .2rem;
 }
 
 .projectDescription {
@@ -186,32 +162,76 @@ ul a {
   transition: 1s ease-in;
 }
 
-#projectList {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding: 0;
-}
-.banners {
-  padding-top: 6rem;
+.projectImg {
+  width: 80%;
+  height: 12.5rem;
+  max-height: 100%;
 }
 
-#topNav {
+.projectImg:hover, .projectImg:active {
+  opacity: 0.5;
+}
+
+.filter-color {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+  filter: invert(0%) sepia(96%) saturate(19%) hue-rotate(227deg) brightness(30%) contrast(99%);
+}
+
+.techStack {
   display: flex;
-  float: right;
-  padding: 0 3% 0 0;
 }
 
-#logo {
-  max-width: 4%; /*fix*/
-  height: 4%;
-  padding: 0 0 0 3%;
+#aboutMe {
+  display: flex;
+  padding: 10%;
+  font-weight: lighter;
 }
 
+#aboutMe div {
+  padding: 20px;
+}
+
+#aboutMe div p span {
+  font-weight: bolder;
+}
+
+#pfp {
+  width: 20%;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+#aboutMe div .headers {
+  font-size: 600%;
+}
+
+#contact {
+  padding: 10% 0 5% 0;
+}
+
+#contactList a {
+  text-decoration: none;
+  color: black;
+  padding: .25rem;
+}
+
+#contactList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 1024px) {
   #navBar {
     width: 99%;
+  }
+
+  #welcomeContainer div:last-child h1 {
+    transform: translateY(450%);
   }
 
   #aboutMe {
@@ -225,10 +245,9 @@ ul a {
 }
 
 @media only screen and (max-width: 768px) {
-  #projectList {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+  #logo {
+    max-width: 5%;
+    height: 5%;
   }
 
   #topNav {
@@ -236,21 +255,54 @@ ul a {
     float: right;
   }
 
-  #logo {
-    max-width: 5%;
-    height: 5%;
+  #welcomeContainer {
+    z-index: 0;
+  }
+
+  #projectList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 75%;
+    margin: auto;
   }
 
   #pfp {
     width: 40%;
+    height: 50%;
+    align-self: center;
+  }
+
+  .headers {
+    padding: 10% 0 0 0;
   }
 }
 
-@media only screen and (max-width: 425px) {  
+@media only screen and (max-width: 425px) {
   #logo {
     margin: 0;
     max-width: 10%;
     height: 10%;
+  }
+
+  #navBar {
+    width: 96%;
+    padding: 0 3% 0 3%;
+  }
+
+  #topNav {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+
+  #topNav li {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .projectImg {
+    width: 75%;
   }
 
   #pfp {
@@ -269,26 +321,6 @@ ul a {
     padding: 0;
   }
 
-  #navBar {
-    width: 96%;
-    padding: 0 3% 0 3%;
-  }
-
-  #navBar:first-child {
-    /*padding: 0px 10px 0px 10px;*/
-  }
-
-  #topNav {
-    display: flex;
-    flex-direction: column;
-    float: right;
-  }
-
-  #topNav li {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   #aboutMe p {
     padding: 5px;
   }
@@ -299,12 +331,7 @@ ul a {
     margin-right: auto;
   }
   
-  .projectImg {
-    width: 75%;
-  }
-  
   .headers {
-    padding: 25% 0 0 0;
-    font-size: 400%;
+    padding: 35% 0 0 0;
   }
 }
